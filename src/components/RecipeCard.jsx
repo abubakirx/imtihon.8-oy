@@ -24,8 +24,9 @@ function RecipeCard({ recipe }) {
         <li>Prep: {recipe.prepMinutes} mins</li>
         <li>Cook: {recipe.cookMinutes} mins</li>
       </ul>
-      <Link to={`/recipe/${recipe.id}`} className="view__btn">View Recipe</Link>
-      <button onClick={handleDelete}>Delete</button>
+      <Link to={`/recipe/${recipe.id}`} className="view__btn">
+        View Recipe
+      </Link>
     </li>
   );
 }
